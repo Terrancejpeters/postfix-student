@@ -22,5 +22,6 @@ public abstract class UnaryOperator<T> implements Operator<T> {
 			}
 			op0 = operand;
 		}
+		//is this an actual change?
 	}
 }
