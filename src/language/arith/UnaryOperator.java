@@ -17,6 +17,9 @@ public abstract class UnaryOperator<T> implements Operator<T> {
 		if(operand == null)
 			throw new NullPointerException("Could not set null operand.");
 		else{
+			if (op0 != null){
+				throw new IllegalStateException("Position 0 has been previously set.");
+			}
 			op0 = operand;
 		}
 	}
